@@ -10,4 +10,12 @@ export const GlobalContainer = styled.div`
 export const Container = styled.div`
   width: 100%;
   padding: 1.2rem 4.8rem;
+
+  @media (max-width: 991.98px) {
+    padding: 1.2rem 2.4rem;
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 1.2rem;
+  }
 `;

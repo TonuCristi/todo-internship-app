@@ -8,12 +8,21 @@ export const StyledList = styled.div`
   padding: 2.4rem 4.8rem;
   color: ${({ theme }) => theme.list.colors.color};
   font-weight: 700;
+
+  @media (max-width: 767.98px) {
+    padding: 2.4rem;
+  }
 `;
 
 export const CatFact = styled.p`
   font-size: ${({ theme }) => theme.list.fontSize.catFact};
   text-align: center;
   margin-bottom: 1.6rem;
+  line-height: 1.4;
+
+  @media (max-width: 1399.98px) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const Title = styled.h2`
@@ -21,6 +30,10 @@ export const Title = styled.h2`
   font-weight: 900;
   font-size: ${({ theme }) => theme.list.fontSize.title};
   align-self: center;
+
+  @media (max-width: 1399.98px) {
+    font-size: 2rem;
+  }
 `;
 
 export const TitleUtilities = styled.div`
@@ -30,6 +43,11 @@ export const TitleUtilities = styled.div`
   justify-items: center;
   align-items: center;
   margin-bottom: 2.4rem;
+
+  @media (max-width: 767.98px) {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
 `;
 
 export const ShowFormBtn = styled.button`
@@ -59,6 +77,14 @@ export const StyledSearchBar = styled.input`
   outline: none;
   background: none;
   color: ${({ theme }) => theme.list.colors.white};
+
+  @media (max-width: 767.98px) {
+    width: 80%;
+  }
+
+  @media (max-width: 575.98px) {
+    width: 100%;
+  }
 `;
 
 export const Items = styled.div`
@@ -79,5 +105,14 @@ export const Items = styled.div`
   &::-webkit-scrollbar-thumb {
     background: ${({ theme }) => theme.list.colors.color};
     border-radius: 1.3rem;
+  }
+
+  @media (max-width: 767.98px) {
+    width: 90%;
+    padding: 0 0 0 1.2rem;
+  }
+
+  @media (max-width: 575.98px) {
+    width: 100%;
   }
 `;

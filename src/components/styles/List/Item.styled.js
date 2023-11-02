@@ -33,6 +33,10 @@ export const Text = styled.div`
 export const Controls = styled.div`
   display: flex;
   gap: 0.6rem;
+
+  @media (max-width: 575.98px) {
+    gap: 0.4rem;
+  }
 `;
 
 export const Btn = styled.button`
@@ -65,4 +69,10 @@ export const StyledInfo = styled.div`
   box-shadow: 0rem 1.2rem 1.2rem rgb(252, 196, 25, 0.2);
   width: 35rem;
   z-index: 1;
+
+  @media (max-width: 575.98px) {
+    top: 130%;
+    left: 0;
+    transform: translateX(-70%);
+  }
 `;

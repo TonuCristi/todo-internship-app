@@ -13,6 +13,14 @@ export const StyledAddForm = styled.form`
   border-radius: 2.7rem;
   border: 3px solid ${({ theme }) => theme.list.colors.color};
   box-shadow: 0rem 1.2rem 1.2rem rgb(252, 196, 25, 0.2);
+  z-index: 2;
+
+  @media (max-width: 767.98px) {
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+  }
 `;
 
 export const Input = styled.input`
@@ -31,7 +39,7 @@ export const AddBtn = styled.button`
   background-color: ${({ theme }) => theme.list.colors.color};
   border: none;
   font-family: inherit;
-  font-size: ${({ theme }) => theme.list.fontSize.input};
+  font-size: ${({ theme }) => theme.list.fontSize.btn};
   font-weight: 700;
   padding: 0.6rem 1.2rem;
   border-radius: 2.7rem;

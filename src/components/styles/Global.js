@@ -9,13 +9,13 @@ const GlobalStyles = createGlobalStyle`
 
     html {
         font-size: 62.5%;
+        overflow: hidden;
     }
 
     body {
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         line-height: 1;
-        overflow: hidden;
         background-color: rgb(206, 212, 218);
     }
 `;

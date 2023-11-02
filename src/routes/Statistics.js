@@ -6,6 +6,7 @@ import {
   StatisticsList,
   StyledStatistics,
   Title,
+  Stat,
 } from "../components/styles/Statistics.styled";
 
 function Statistics({ data }) {
@@ -86,9 +87,9 @@ function Statistics({ data }) {
         <StatisticsContainer>
           <StatisticsList>
             {stats.map((stat) => (
-              <li>
+              <Stat>
                 {stat.name}: {checkToDos(stat.value)}
-              </li>
+              </Stat>
             ))}
           </StatisticsList>
           <Emoji>

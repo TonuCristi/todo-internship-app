@@ -7,10 +7,14 @@ import { GlobalContainer } from "../components/styles/Container.styled";
 
 const theme = {
   navBar: {
-    bg: "rgb(33, 37, 41)",
-    color: "rgb(252, 196, 25)",
-    titleFS: "2.4rem",
-    linkFS: "1.8rem",
+    colors: {
+      bg: "rgb(33, 37, 41)",
+      color: "rgb(252, 196, 25)",
+    },
+    fontSize: {
+      title: "2.4rem",
+      link: "1.8rem",
+    },
   },
   list: {
     colors: {

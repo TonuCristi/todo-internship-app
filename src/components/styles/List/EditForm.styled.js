@@ -14,6 +14,12 @@ export const StyledEditForm = styled.form`
   border: 3px solid ${({ theme }) => theme.list.colors.color};
   box-shadow: 0rem 1.2rem 1.2rem rgb(252, 196, 25, 0.2);
   z-index: 1;
+
+  @media (max-width: 575.98px) {
+    top: 130%;
+    right: 0%;
+    transform: translateX(10%);
+  }
 `;
 
 export const Input = styled.input`
