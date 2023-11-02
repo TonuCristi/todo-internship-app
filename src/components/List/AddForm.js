@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { StyledAddForm, Input, AddBtn } from "../styles/List/AddForm.styled";
 
 export default function AddForm({ data, onAddItem }) {
   const [inputValue, setInputValue] = useState("");
@@ -15,14 +16,13 @@ export default function AddForm({ data, onAddItem }) {
   }
 
   return (
-    <form className="add-form" onSubmit={handleSubmit}>
-      <input
-        className="add-input"
+    <StyledAddForm onSubmit={handleSubmit}>
+      <Input
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         placeholder="Write something..."
       />
-      <button className="add-btn">Add</button>
-    </form>
+      <AddBtn>Add</AddBtn>
+    </StyledAddForm>
   );
 }

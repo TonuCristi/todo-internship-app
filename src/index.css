@@ -61,12 +61,12 @@ body {
 } */
 
 /* ----- List ----- */
-.container {
+/* .container {
   width: 100%;
   padding: 1.2rem 4.8rem;
-}
+} */
 
-.list {
+/* .list {
   height: 100%;
   width: 100%;
   background-color: rgb(33, 37, 41);
@@ -75,28 +75,28 @@ body {
   color: rgb(252, 196, 25);
   font-size: 1.2rem;
   font-weight: 700;
-}
+} */
 
-.cat-fact {
+/* .cat-fact {
   font-size: 1.6rem;
   text-align: center;
   margin-bottom: 1.6rem;
-}
+} */
 
 /* ----- Title, Utilities ----- */
 
-.title-utilities {
+/* .title-utilities {
   position: relative;
   display: grid;
   grid-template-columns: auto 1fr auto;
   justify-items: center;
   align-items: center;
   margin-bottom: 2.4rem;
-}
+} */
 
 /* ----- Search Bar ----- */
 
-.searchBar {
+/* .searchBar {
   width: 50%;
   font-size: 1.6rem;
   font-weight: 700;
@@ -107,11 +107,11 @@ body {
   outline: none;
   background: none;
   color: rgb(248, 249, 250);
-  /* box-shadow: 0rem 1.2rem 1.2rem rgb(252, 196, 25, 0.2); */
-}
+  box-shadow: 0rem 1.2rem 1.2rem rgb(252, 196, 25, 0.2);
+} */
 
 /* ----- Add From ----- */
-.show-form-btn {
+/* .show-form-btn {
   background: none;
   border: 3px solid rgb(252, 196, 25);
   color: rgb(252, 196, 25);
@@ -125,9 +125,9 @@ body {
   height: 4rem;
   border-radius: 2.7rem;
   cursor: pointer;
-}
+} */
 
-.add-form {
+/* .add-form {
   background-color: rgb(33, 37, 41);
   position: absolute;
   top: 130%;
@@ -140,9 +140,9 @@ body {
   border-radius: 2.7rem;
   border: 3px solid rgb(252, 196, 25);
   box-shadow: 0rem 1.2rem 1.2rem rgb(252, 196, 25, 0.2);
-}
+} */
 
-.add-input {
+/* .add-input {
   font-size: 1.6rem;
   font-weight: 700;
   font-family: inherit;
@@ -152,9 +152,9 @@ body {
   outline: none;
   background: none;
   color: rgb(248, 249, 250);
-}
+} */
 
-.add-btn {
+/* .add-btn {
   background-color: rgb(252, 196, 25);
   border: none;
   font-family: inherit;
@@ -163,11 +163,11 @@ body {
   padding: 0.6rem 1.2rem;
   border-radius: 2.7rem;
   cursor: pointer;
-}
+} */
 
 /* ----- Items ----- */
 
-.items {
+/* .items {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
@@ -177,32 +177,31 @@ body {
   width: 50%;
   margin: 0 auto;
   padding: 0 0 0 4rem;
-}
+} */
 
-.items::-webkit-scrollbar {
+/* .items::-webkit-scrollbar {
   width: 1.2rem;
 }
 
 .items::-webkit-scrollbar-thumb {
   background: rgb(252, 196, 25);
   border-radius: 1.3rem;
-}
+} */
 
-.item {
+/* .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border-bottom: 3px solid rgb(252, 196, 25); */
   font-size: 1.6rem;
   padding: 0.6rem 1.2rem;
-}
+} */
 
-.item-text {
+/* .item-text {
   display: flex;
   align-items: center;
-}
+} */
 
-.item-nr {
+/* .item-nr {
   border: 3px solid rgb(252, 196, 25);
   border-radius: 2.7rem;
   padding: 0.4rem;
@@ -211,20 +210,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.checked {
+/* .checked {
   text-decoration: line-through;
-}
+} */
 
 /* ----- Buttons ----- */
 
-.controls {
+/* .controls {
   display: flex;
   gap: 0.6rem;
-}
+} */
 
-.info-btn,
+/* .info-btn,
 .edit-show-btn,
 .check-btn,
 .remove-btn {
@@ -235,17 +234,16 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
-  /* padding: 0.6rem; */
   cursor: pointer;
-}
+} */
 
 /* ----- Info ----- */
 
-.info-container {
+/* .info-container {
   position: relative;
-}
+} */
 
-.info {
+/* .info {
   background-color: rgb(33, 37, 41);
   position: absolute;
   top: 130%;
@@ -259,15 +257,15 @@ body {
   box-shadow: 0rem 1.2rem 1.2rem rgb(252, 196, 25, 0.2);
   width: 35rem;
   z-index: 1;
-}
+} */
 
 /* ----- Edit Form ----- */
 
-.edit-container {
+/* .edit-container {
   position: relative;
-}
+} */
 
-.edit-form {
+/* .edit-form {
   background-color: rgb(33, 37, 41);
   position: absolute;
   top: 130%;
@@ -281,9 +279,9 @@ body {
   border: 3px solid rgb(252, 196, 25);
   box-shadow: 0rem 1.2rem 1.2rem rgb(252, 196, 25, 0.2);
   z-index: 1;
-}
+} */
 
-.edit-input {
+/* .edit-input {
   font-size: 1.6rem;
   font-weight: 700;
   font-family: inherit;
@@ -293,9 +291,9 @@ body {
   outline: none;
   background: none;
   color: rgb(248, 249, 250);
-}
+} */
 
-.edit-btn {
+/* .edit-btn {
   background-color: rgb(252, 196, 25);
   border: none;
   font-family: inherit;
@@ -304,10 +302,10 @@ body {
   padding: 0.6rem 1.2rem;
   border-radius: 2.7rem;
   cursor: pointer;
-}
+} */
 
 /* ----- Statistics ----- */
-.statistics {
+/* .statistics {
   height: 100%;
   background-color: rgb(33, 37, 41);
   border-radius: 2.7rem;
@@ -319,30 +317,30 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 4.8rem;
-}
+} */
 
-.statistics-container {
+/* .statistics-container {
   justify-self: center;
   width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-.statistics-list {
+/* .statistics-list {
   list-style-type: none;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-}
+} */
 
-.emoji {
+/* .emoji {
   font-size: 30rem;
-}
+} */
 
 /* ----- About ----- */
-.about {
+/* .about {
   height: 100%;
   background-color: rgb(33, 37, 41);
   border-radius: 2.7rem;
@@ -354,21 +352,21 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 8.8rem;
-}
+} */
 
-.description {
+/* .description {
   width: 50%;
   line-height: 1.6;
   text-align: center;
-}
+} */
 
 /* ----- Footer ----- */
-.footer-container {
+/* .footer-container {
   width: 100%;
   padding: 1.2rem 4.8rem 2.4rem;
-}
+} */
 
-.footer {
+/* .footer {
   background-color: rgb(33, 37, 41);
   border-radius: 2.7rem;
   padding: 1.2rem;
@@ -377,4 +375,4 @@ body {
   display: flex;
   justify-content: center;
   font-weight: 700;
-}
+} */

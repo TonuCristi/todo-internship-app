@@ -1,9 +1,11 @@
+import { StyledInfo } from "../styles/List/Item.styled";
+
 export default function Info({ item }) {
   return (
-    <div className="info">
-      <p className="data">Id: {item.id + 1}</p>
-      <p className="data">Text: {item.text}</p>
-      <p className="data">Creation Date: {item.creationDate}</p>
-    </div>
+    <StyledInfo>
+      <li className="data">Id: {item.id + 1}</li>
+      <li className="data">Text: {item.text}</li>
+      <li className="data">Creation Date: {item.creationDate}</li>
+    </StyledInfo>
   );
 }

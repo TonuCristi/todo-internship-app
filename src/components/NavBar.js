@@ -1,8 +1,10 @@
-import { StyledNavBar } from "./styles/NavBar.styled";
-import { NavBarContainer } from "./styles/NavBar.styled";
-import { Title } from "./styles/NavBar.styled";
-import { StyledLink } from "./styles/NavBar.styled";
-import { Links } from "./styles/NavBar.styled";
+import {
+  StyledNavBar,
+  NavBarContainer,
+  Title,
+  StyledLink,
+  Links,
+} from "./styles/NavBar.styled";
 
 export default function NavBar() {
   return (

@@ -1,7 +1,9 @@
+import { FooterContainer, StyledFooter } from "./styles/Footer.styled";
+
 export default function Footer() {
   return (
-    <footer className="footer-container">
-      <div className="footer">by Tonu Cristian</div>
-    </footer>
+    <FooterContainer>
+      <StyledFooter>by Tonu Cristian</StyledFooter>
+    </FooterContainer>
   );
 }

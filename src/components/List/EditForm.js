@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { EditBtn, Input, StyledEditForm } from "../styles/List/EditForm.styled";
 
 function EditForm({ id, onEditItem }) {
   const [inputValue, setInputValue] = useState("");
@@ -9,15 +10,14 @@ function EditForm({ id, onEditItem }) {
   }
 
   return (
-    <form className="edit-form" onSubmit={handleSubmit}>
-      <input
-        className="edit-input"
+    <StyledEditForm onSubmit={handleSubmit}>
+      <Input
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         placeholder="New text..."
       />
-      <button className="edit-btn">Edit</button>
-    </form>
+      <EditBtn className="edit-btn">Edit</EditBtn>
+    </StyledEditForm>
   );
 }
 

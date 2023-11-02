@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react";
-import Title from "../components/Title";
 import Item from "../components/List/Item";
 import AddForm from "../components/List/AddForm";
 import SearchBar from "../components/List/SearchBar";
 import { Container } from "../components/styles/Container.styled";
+import {
+  CatFact,
+  StyledList,
+  Title,
+  TitleUtilities,
+  ShowFormBtn,
+  Items,
+} from "../components/styles/List/List.styles";
 
 export default function List({
   data,
@@ -45,20 +52,18 @@ export default function List({
 
   return (
     <Container>
-      <div className="list">
-        <div className="cat-fact">Cat fact: {catFact.data}🐈</div>
-        <div className="title-utilities">
+      <StyledList>
+        <CatFact>🐈Cat fact: {catFact.data}🐈</CatFact>
+        <TitleUtilities>
           <Title>List📃</Title>
           <SearchBar
             searchValue={searchValue}
             onSearchValue={handleSearchValue}
           />
-          <div className="show-form-btn" onClick={handleIsOpen}>
-            +
-          </div>
+          <ShowFormBtn onClick={handleIsOpen}>+</ShowFormBtn>
           {isOpen && <AddForm onAddItem={onAddItem} data={data} />}
-        </div>
-        <div className="items">
+        </TitleUtilities>
+        <Items>
           {filterData.map((item, i) => (
             <Item
               key={item.id}
@@ -69,8 +74,8 @@ export default function List({
               onEditItem={onEditItem}
             />
           ))}
-        </div>
-      </div>
+        </Items>
+      </StyledList>
     </Container>
   );
 }
