@@ -58,7 +58,7 @@ export default function NavBar() {
             <StyledLink to={"statistics"}>Statistics📊</StyledLink>
           </li>
           <li>
-            <StyledLink to={"about"}>About🙈</StyledLink>
+            <StyledLink to={"about"}>About😺</StyledLink>
           </li>
         </Links>
       </StyledNavBar>
