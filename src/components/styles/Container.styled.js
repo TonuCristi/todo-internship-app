@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const GlobalContainer = styled.div`
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
   background-color: rgb(206, 212, 218);

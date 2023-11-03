@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledList = styled.div`
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   background-color: ${({ theme }) => theme.list.colors.bg};
   border-radius: 2.7rem;
   padding: 2.4rem 4.8rem;
