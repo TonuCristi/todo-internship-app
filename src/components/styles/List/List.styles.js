@@ -91,8 +91,9 @@ export const Items = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
+  overflow: auto;
   height: 50vh;
   width: 50%;
   margin: 0 auto;
