@@ -93,9 +93,9 @@ export const Items = styled.div`
   gap: 2.4rem;
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 50vh;
+  /* height: 50vh; */
   width: 50%;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   padding: 0 0 0 4rem;
 
   &::-webkit-scrollbar {
