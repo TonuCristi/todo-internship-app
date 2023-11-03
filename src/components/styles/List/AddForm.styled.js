@@ -33,6 +33,10 @@ export const Input = styled.input`
   outline: none;
   background: none;
   color: ${({ theme }) => theme.list.colors.white};
+
+  @media (max-width: 767.98px) {
+    width: 100%;
+  }
 `;
 
 export const AddBtn = styled.button`

@@ -56,6 +56,7 @@ export const BtnContainer = styled.div`
 
 // ----- Info -----
 export const StyledInfo = styled.div`
+  list-style-type: none;
   background-color: ${({ theme }) => theme.list.colors.bg};
   position: absolute;
   top: 130%;

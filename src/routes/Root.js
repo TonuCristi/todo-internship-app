@@ -67,7 +67,7 @@ const theme = {
   },
 };
 
-export default function Layout() {
+export default function Root() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalContainer>
