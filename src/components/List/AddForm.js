@@ -4,6 +4,10 @@ import { StyledAddForm, Input, AddBtn } from "../styles/List/AddForm.styled";
 export default function AddForm({ data, onAddItem }) {
   const [inputValue, setInputValue] = useState("");
 
+  const handleChange = (e) => {
+    if (e.target.value.split(" ").length <= 5) setInputValue(e.target.value);
+  };
+
   function handleSubmit(e) {
     e.preventDefault();
     onAddItem({
@@ -19,7 +23,7 @@ export default function AddForm({ data, onAddItem }) {
     <StyledAddForm onSubmit={handleSubmit}>
       <Input
         value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
+        onChange={handleChange}
         placeholder="Write something..."
       />
       <AddBtn>Add</AddBtn>
