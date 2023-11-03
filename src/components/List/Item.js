@@ -30,7 +30,7 @@ export default function Item({
       <Controls>
         <BtnContainer>
           <Button onClick={() => setIsInfoOpen((prev) => !prev)}>🗒️</Button>
-          {isInfoOpen && <Info item={item} />}
+          {isInfoOpen && <Info item={item} ind={ind} />}
         </BtnContainer>
         <BtnContainer>
           <Button onClick={() => setIsEditOpen((prev) => !prev)}>✏️</Button>

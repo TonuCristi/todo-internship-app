@@ -18,7 +18,7 @@ export const StyledEditForm = styled.form`
   @media (max-width: 575.98px) {
     top: 130%;
     right: 0%;
-    transform: translateX(10%);
+    transform: translateX(25%);
   }
 `;
 

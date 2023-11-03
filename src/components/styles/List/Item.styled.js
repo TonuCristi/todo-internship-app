@@ -62,18 +62,21 @@ export const StyledInfo = styled.div`
   top: 130%;
   right: 0;
   display: grid;
-  flex-direction: column;
+  grid-template-columns: 1fr;
+  justify-items: center;
   gap: 1.2rem;
   padding: 1.2rem;
   border-radius: 2.7rem;
   border: 3px solid ${({ theme }) => theme.list.colors.color};
   box-shadow: 0rem 1.2rem 1.2rem rgb(252, 196, 25, 0.2);
   width: 35rem;
+  text-align: center;
   z-index: 1;
 
   @media (max-width: 575.98px) {
     top: 130%;
     left: 0;
     transform: translateX(-70%);
+    width: 20rem;
   }
 `;
