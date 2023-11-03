@@ -36,7 +36,7 @@ export const BurgerContainer = styled.div`
 
   @media (max-width: 767.98px) {
     display: block;
-    z-index: 2;
+    z-index: 4;
   }
 `;
 
@@ -109,7 +109,7 @@ export const Links = styled.ul`
     height: 100vh;
     background-color: ${({ theme }) => theme.navBar.colors.color};
     color: ${({ theme }) => theme.navBar.colors.bg};
-    z-index: 1;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: center;

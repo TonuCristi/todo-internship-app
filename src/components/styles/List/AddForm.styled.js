@@ -19,7 +19,7 @@ export const StyledAddForm = styled.form`
     top: 105%;
     left: 50%;
     transform: translateX(-50%);
-    width: 70%;
+    width: 100%;
   }
 `;
 
