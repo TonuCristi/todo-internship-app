@@ -116,6 +116,7 @@ export const Links = styled.ul`
     justify-content: center;
     gap: 1.6rem;
     transition: all 0.3s ease;
+    overflow: hidden;
 
     :only-child {
       @media (max-width: 767.98px) {
