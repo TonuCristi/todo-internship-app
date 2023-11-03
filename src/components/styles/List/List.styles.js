@@ -23,6 +23,11 @@ export const CatFact = styled.p`
   @media (max-width: 1399.98px) {
     font-size: 1.4rem;
   }
+
+  @media (max-width: 767.98px) {
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
 `;
 
 export const Title = styled.h2`

@@ -8,7 +8,7 @@ export default function AddForm({ data, onAddItem }) {
     e.preventDefault();
     onAddItem({
       id: data.length,
-      text: inputValue,
+      text: inputValue.toLowerCase(),
       checked: false,
       creationDate: new Date().toLocaleString(),
     });

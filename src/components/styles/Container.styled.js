@@ -6,7 +6,6 @@ export const GlobalContainer = styled.div`
   display: grid;
   grid-template-rows: auto 1fr auto;
   background-color: rgb(206, 212, 218);
-  overflow-x: hidden;
 `;
 
 export const Container = styled.div`
