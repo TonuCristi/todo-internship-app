@@ -91,9 +91,8 @@ export const Items = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  /* overflow-y: scroll; */
-  /* overflow-x: hidden; */
-  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 50vh;
   width: 50%;
   margin: 0 auto;
@@ -108,12 +107,12 @@ export const Items = styled.div`
     border-radius: 1.3rem;
   }
 
-  @media (max-width: 767.98px) {
+  /* @media (max-width: 767.98px) {
     width: 90%;
     padding: 0 0 0 1.2rem;
   }
 
   @media (max-width: 575.98px) {
     width: 100%;
-  }
+  } */
 `;
