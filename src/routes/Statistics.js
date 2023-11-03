@@ -64,19 +64,19 @@ function Statistics({ data }) {
     },
     {
       name: "Oldest todo",
-      value: data.length
-        ? data.map((item) => item.creationDate)[data.length - 1]
-        : "",
+      value: data.map((item) => item.creationDate)[data.length - 1],
     },
     {
       name: "Newest todo",
-      value: data.length ? data.map((item) => item.creationDate)[0] : "",
+      value: data.map((item) => item.creationDate)[0],
     },
     {
       name: "Most common words",
-      value: getCommonWords().map((item, i) => (
-        <span key={item.word}>{`${i > 0 ? ", " : ""}${item.word}`}</span>
-      )),
+      value: getCommonWords().length
+        ? getCommonWords().map((item, i) => (
+            <span key={item.word}>{`${i > 0 ? ", " : ""}${item.word}`}</span>
+          ))
+        : "Not enough words",
     },
   ];
 
@@ -87,7 +87,7 @@ function Statistics({ data }) {
         <StatisticsContainer>
           <StatisticsList>
             {stats.map((stat) => (
-              <Stat>
+              <Stat key={stat.name}>
                 {stat.name}: {checkToDos(stat.value)}
               </Stat>
             ))}
