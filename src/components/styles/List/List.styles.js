@@ -91,21 +91,21 @@ export const Items = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  /* overflow-y: scroll;
-  overflow-x: hidden; */
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 50vh;
   width: 50%;
   margin: 0 auto;
   padding: 0 0 0 4rem;
 
-  &::-webkit-scrollbar {
+  /* &::-webkit-scrollbar {
     width: 1.2rem;
   }
 
   &::-webkit-scrollbar-thumb {
     background: ${({ theme }) => theme.list.colors.color};
     border-radius: 1.3rem;
-  }
+  } */
 
   @media (max-width: 767.98px) {
     width: 90%;
