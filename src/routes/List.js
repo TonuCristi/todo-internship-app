@@ -63,7 +63,7 @@ export default function List({
           <ShowFormBtn onClick={handleIsOpen}>+</ShowFormBtn>
           {isOpen && <AddForm onAddItem={onAddItem} data={data} />}
         </TitleUtilities>
-        <Items>
+        {/* <Items>
           {filterData.map((item, i) => (
             <Item
               key={item.id}
@@ -74,7 +74,7 @@ export default function List({
               onEditItem={onEditItem}
             />
           ))}
-        </Items>
+        </Items> */}
       </StyledList>
     </Container>
   );
