@@ -13,7 +13,7 @@ export default function AddForm({ data, onAddItem, onCloseAddForm }) {
     if (inputValue.length > 0) {
       onAddItem({
         id: data.length,
-        text: inputValue.toLowerCase(),
+        text: inputValue,
         checked: false,
         creationDate: new Date().toLocaleString(),
       });
