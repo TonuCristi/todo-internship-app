@@ -21,6 +21,8 @@ export default function Item({
   const [isInfoOpen, setIsInfoOpen] = useState(false);
   const [isEditOpen, setIsEditOpen] = useState(false);
 
+  const handleCloseEditForm = () => setIsEditOpen((prev) => !prev);
+
   return (
     <StyledItem>
       <Content>
@@ -34,7 +36,13 @@ export default function Item({
         </BtnContainer>
         <BtnContainer>
           <Button onClick={() => setIsEditOpen((prev) => !prev)}>✏️</Button>
-          {isEditOpen && <EditForm id={item.id} onEditItem={onEditItem} />}
+          {isEditOpen && (
+            <EditForm
+              id={item.id}
+              onEditItem={onEditItem}
+              onCloseEditForm={handleCloseEditForm}
+            />
+          )}
         </BtnContainer>
         <Button onClick={() => onCheckItem(item.id)}>✅</Button>
         <Button onClick={() => onRemoveItem(item.id)}>❌</Button>

@@ -28,6 +28,8 @@ export default function List({
 
   const handleSearchValue = (value) => setSearchValue(value);
 
+  const handleCloseAddForm = () => setIsOpen((prev) => !prev);
+
   const filterData = data.filter((item) => item.text.includes(searchValue));
 
   function getJSON(url) {
@@ -61,7 +63,13 @@ export default function List({
             onSearchValue={handleSearchValue}
           />
           <ShowFormBtn onClick={handleIsOpen}>+</ShowFormBtn>
-          {isOpen && <AddForm onAddItem={onAddItem} data={data} />}
+          {isOpen && (
+            <AddForm
+              onAddItem={onAddItem}
+              data={data}
+              onCloseAddForm={handleCloseAddForm}
+            />
+          )}
         </TitleUtilities>
         <Items>
           {filterData.map((item, i) => (

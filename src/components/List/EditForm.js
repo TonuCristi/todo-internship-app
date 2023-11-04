@@ -1,19 +1,26 @@
 import { useState } from "react";
 import { EditBtn, Input, StyledEditForm } from "../styles/List/EditForm.styled";
 
-function EditForm({ id, onEditItem }) {
+function EditForm({ id, onEditItem, onCloseEditForm }) {
   const [inputValue, setInputValue] = useState("");
+
+  const handleChange = (e) => {
+    if (e.target.value.split(" ").length <= 5) setInputValue(e.target.value);
+  };
 
   function handleSubmit(e) {
     e.preventDefault();
-    onEditItem(id, inputValue);
+    if (inputValue.length > 0) {
+      onEditItem(id, inputValue);
+      onCloseEditForm();
+    }
   }
 
   return (
     <StyledEditForm onSubmit={handleSubmit}>
       <Input
         value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
+        onChange={handleChange}
         placeholder="New text..."
       />
       <EditBtn className="edit-btn">Edit</EditBtn>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { StyledAddForm, Input, AddBtn } from "../styles/List/AddForm.styled";
 
-export default function AddForm({ data, onAddItem }) {
+export default function AddForm({ data, onAddItem, onCloseAddForm }) {
   const [inputValue, setInputValue] = useState("");
 
   const handleChange = (e) => {
@@ -10,13 +10,16 @@ export default function AddForm({ data, onAddItem }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    onAddItem({
-      id: data.length,
-      text: inputValue.toLowerCase(),
-      checked: false,
-      creationDate: new Date().toLocaleString(),
-    });
-    setInputValue("");
+    if (inputValue.length > 0) {
+      onAddItem({
+        id: data.length,
+        text: inputValue.toLowerCase(),
+        checked: false,
+        creationDate: new Date().toLocaleString(),
+      });
+      setInputValue("");
+      onCloseAddForm();
+    }
   }
 
   return (
