@@ -36,6 +36,7 @@ export const Input = styled.input`
 
 export const EditBtn = styled.button`
   background-color: ${({ theme }) => theme.list.colors.color};
+  color: ${({ theme }) => theme.list.colors.bg};
   border: none;
   font-family: inherit;
   font-size: ${({ theme }) => theme.list.fontSize.btn};
