@@ -15,7 +15,10 @@ import { useState } from "react";
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => setIsOpen((prev) => !prev);
+  const handleClick = () => {
+    setIsOpen((prev) => !prev);
+    document.body.style.overflow = !isOpen ? "hidden" : "auto";
+  };
 
   const burgerStyle = {
     backgroundColor: `${isOpen ? "rgb(33, 37, 41)" : "rgb(252, 196, 25)"}`,
