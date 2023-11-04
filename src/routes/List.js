@@ -30,7 +30,9 @@ export default function List({
 
   const handleCloseAddForm = () => setIsOpen((prev) => !prev);
 
-  const filterData = data.filter((item) => item.text.includes(searchValue));
+  const filterData = data.filter((item) =>
+    item.text.includes(searchValue.toLowerCase())
+  );
 
   function getJSON(url) {
     return fetch(url).then((res) => {
