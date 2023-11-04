@@ -17,7 +17,7 @@ export default function NavBar() {
 
   const handleClick = () => {
     setIsOpen((prev) => !prev);
-    document.body.style.overflow = !isOpen ? "hidden" : "auto";
+    document.body.style.overflowY = !isOpen ? "hidden" : "auto";
   };
 
   const burgerStyle = {
