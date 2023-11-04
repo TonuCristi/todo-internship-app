@@ -22,7 +22,7 @@ function Statistics({ data }) {
   function getCommonWords() {
     const countCompare = wordCount / toDoCount;
     const wordsUses = [];
-    const allWords = data.flatMap((item) => item.text.split(" "));
+    const allWords = data.flatMap((item) => item.text.toLowerCase().split(" "));
 
     // - Here we find the unique words
     const uniqueWords = allWords.filter(
